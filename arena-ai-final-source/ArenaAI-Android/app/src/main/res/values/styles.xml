@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main Theme - Grok-inspired deep dark -->
+    <style name="Theme.ArenaAI" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/arena_primary</item>
+        <item name="colorPrimaryDark">@color/arena_primary_dark</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorSecondary">@color/arena_secondary</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorAccent">@color/arena_accent</item>
+        <item name="android:colorBackground">@color/arena_background</item>
+        <item name="colorSurface">@color/arena_surface</item>
+        <item name="colorOnSurface">@color/arena_text_primary</item>
+        <item name="android:statusBarColor">@color/arena_background</item>
+        <item name="android:navigationBarColor">@color/arena_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@color/arena_background</item>
+    </style>
+
+    <!-- Splash Theme -->
+    <style name="Theme.ArenaAI.Splash" parent="Theme.ArenaAI">
+        <item name="android:windowBackground">@color/arena_background</item>
+    </style>
+
+    <!-- AppBar Overlay -->
+    <style name="ArenaAI.AppBarOverlay" parent="ThemeOverlay.Material3.Dark">
+        <item name="colorPrimary">@color/arena_surface</item>
+        <item name="colorOnPrimary">@color/arena_text_primary</item>
+    </style>
+
+    <!-- Popup Overlay -->
+    <style name="ArenaAI.PopupOverlay" parent="ThemeOverlay.Material3.Dark" />
+</resources>

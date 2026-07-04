@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_battle"
+        android:icon="@drawable/ic_battle"
+        android:title="@string/nav_battle" />
+    <item
+        android:id="@+id/nav_agent"
+        android:icon="@drawable/ic_agent"
+        android:title="@string/nav_agent" />
+    <item
+        android:id="@+id/nav_side_by_side"
+        android:icon="@drawable/ic_side_by_side"
+        android:title="@string/nav_side_by_side" />
+    <item
+        android:id="@+id/nav_direct"
+        android:icon="@drawable/ic_direct"
+        android:title="@string/nav_direct" />
+</menu>

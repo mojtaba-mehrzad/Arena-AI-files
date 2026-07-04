@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Arena.ai Brand - Inspired by warm academic palette -->
+    <color name="arena_primary">#D4A853</color>
+    <color name="arena_primary_dark">#B8922F</color>
+    <color name="arena_secondary">#E8C97A</color>
+    <color name="arena_accent">#D4A853</color>
+
+    <!-- Background - Deep dark like Grok -->
+    <color name="arena_background">#0A0A0A</color>
+    <color name="arena_surface">#141414</color>
+    <color name="arena_surface_variant">#1E1E1E</color>
+    <color name="arena_card">#1A1A1A</color>
+
+    <!-- Text Colors -->
+    <color name="arena_text_primary">#F0F0F0</color>
+    <color name="arena_text_secondary">#8E8E93</color>
+    <color name="arena_text_hint">#636366</color>
+
+    <!-- Divider -->
+    <color name="arena_divider">#2C2C2E</color>
+
+    <!-- Status -->
+    <color name="arena_success">#30D158</color>
+    <color name="arena_error">#FF453A</color>
+
+    <!-- Standard -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Bottom Nav -->
+    <color name="bottom_nav_active">@color/arena_primary</color>
+    <color name="bottom_nav_inactive">#636366</color>
+</resources>

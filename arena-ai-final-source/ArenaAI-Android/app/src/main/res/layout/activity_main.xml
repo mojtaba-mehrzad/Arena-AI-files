@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/arena_background">
+
+    <!-- WebView area -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_bar"
+            android:visibility="gone"
+            android:layout_gravity="top" />
+
+        <FrameLayout
+            android:id="@+id/fullscreen_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@android:color/black" />
+
+    </FrameLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/arena_divider" />
+
+    <!-- Bottom bar -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/arena_background">
+
+        <!-- Wave overlay -->
+        <View
+            android:id="@+id/wave_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/nav_wave"
+            android:visibility="invisible" />
+
+        <!-- Bottom Navigation -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Account switch button -->
+            <ImageView
+                android:id="@+id/btn_account"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="2dp"
+                android:padding="14dp"
+                android:src="@drawable/ic_switch_account"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/accounts_title"
+                app:tint="@color/arena_text_hint" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                app:itemIconTint="@color/bottom_nav_color"
+                app:labelVisibilityMode="unlabeled"
+                app:itemActiveIndicatorStyle="@null"
+                app:itemRippleColor="@color/bottom_nav_ripple_color"
+                app:menu="@menu/bottom_nav_menu" />
+
+            <!-- Refresh button -->
+            <ImageView
+                android:id="@+id/btn_refresh"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="2dp"
+                android:padding="14dp"
+                android:src="@drawable/ic_refresh"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/nav_refresh"
+                app:tint="@color/arena_text_hint" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

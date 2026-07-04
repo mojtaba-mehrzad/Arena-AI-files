@@ -1,0 +1,6 @@
+# HSTS 1.0 Known Hosts database for GNU Wget.
+# Edit at your own risk.
+# <hostname>	<port>	<incl. subdomains>	<created>	<max-age>
+arena.ai	0	1	1783001984	15552000
+services.gradle.org	0	1	1782999873	31536000
+github.com	0	1	1782999873	31536000

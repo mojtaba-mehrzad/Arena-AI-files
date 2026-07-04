@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">arena.ai</domain>
+        <domain includeSubdomains="true">api.arena.ai</domain>
+        <domain includeSubdomains="true">cdn.arena.ai</domain>
+        <domain includeSubdomains="true">ws.arena.ai</domain>
+    </domain-config>
+</network-security-config>
