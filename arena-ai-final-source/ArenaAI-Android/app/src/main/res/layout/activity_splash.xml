@@ -9,7 +9,7 @@
         android:id="@+id/splash_logo"
         android:layout_width="88dp"
         android:layout_height="88dp"
-        android:src="@mipmap/ic_launcher_arena"
+        android:src="@drawable/ic_launcher_arena"
         android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toTopOf="@+id/splash_app_name"
         app:layout_constraintEnd_toEndOf="parent"
